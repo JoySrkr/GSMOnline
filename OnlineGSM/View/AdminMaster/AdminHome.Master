@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminHome.master.cs" Inherits="OnlineGSM.View.AdminMaster.AdminHome" %>
+
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../../Assets/Libraries/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Assets/DataTable/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="../../Assets/Libraries/Fontawesome/css/all.css" rel="stylesheet" />
+    <link href="../../Assets/Css/CustomStyle.css" rel="stylesheet" />
+    <script src="../../Assets/Libraries/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../Assets/Libraries/Fontawesome/js/all.js"></script>
+
+
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#" >  
+                    
+                   <!--  <img src="Imgs/5920.jpg" width="50" height="50" />  -->
+
+                    <img src="../../Assets/Img/pngwing.png" width="35" height="35"/>
+
+                 <!--   <img src="Imgs/pngwing.png"  width="35" height="35" /> -->
+
+                   GSMS
+                    </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/View/AdminMaster/AdminMaster/CntlScholarship.aspx">Scholarship Available</a>
+
+
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="AdminMaster/CntlStudent.aspx">Students List</a>
+                                </li>
+
+                                 
+
+
+                           <!--     <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Scholarship
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                     <!--   <li><a class="dropdown-item" href="DaadScholarship.aspx">DAAD Scholarship</a></li> -->
+                                    <!--  <li><a class="dropdown-item" href="../../Home.aspx">..Home</a> </li>  -->
+                                <!--    <li>  <a class="dropdown-item" href="DaadScholarship.aspx">DaadScholarship</a></li>   
+
+                                       
+                                        <li><a class="dropdown-item" href="DaadScholarship.aspx">Int'l Scholarship</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="DaadScholarship.aspx">Canadian Scholarship</a></li>
+                                    </ul>
+                                </li>  -->
+
+                             <!--   <li class="nav-item">
+                                    <a class="nav-link" href="#">Partners</a>
+                                </li>
+
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#">University</a>
+                                </li>  -->
+
+                            </ul>
+                            <div class="d-flex ms-3 my-2" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </div>
+
+                            <div class="d-flex ms-1 my-1" role="search">
+                                <div class="d-flex align-items-center justify-content-center ms-1 my-1">
+                                    <a class="btn btn-outline-success mb-0" href="#">Log Out</a>
+                                </div>
+
+                              <!--  <div class="d-flex align-items-center justify-content-center ms-2 my-1">
+                                    <a class="btn btn-outline-success mb-0" href="Join.aspx">Join</a>
+                                </div>
+                            </div> -->
+                        </div>
+           
+                </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
